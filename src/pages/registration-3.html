@@ -1,0 +1,99 @@
+<section class="section--small">
+    <div class="container">
+        {{> button-back}}
+        <div class="section__title">Регистрация личного кабинета</div>
+        {{> tariff}}
+        <div class="steps-list">
+            <div class="steps-list__item">Основные сведения</div>
+            <div class="steps-list__item">Контактные данные</div>
+            <div class="steps-list__item steps-list__item--active">Работодатели</div>
+            <div class="steps-list__item">Платежные реквизиты</div>
+            <div class="steps-list__item">Членство в профсоюзе</div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-xl-10">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-field">
+                                <span class="form-field__title">Работодатель</span>
+                                <select class="js-company-select w-100">
+                                    <option></option>
+                                    <option>ООО “Название компании” 1</option>
+                                    <option>ООО “Название компании” 2</option>
+                                    <option>ООО “Название компании” 3</option>
+                                    <option>ООО “Название компании” 4</option>
+                                    <option>ООО “Название компании” 5</option>
+                                    <option>ООО “Название компании” 6</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-field">
+                                <span class="form-field__title">Не нашли своего работодателя в списке?</span>
+                                <input type="text" class="form-field__input" placeholder="Введите ООО работодателя здесь">
+                            </label>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-field">
+                                <span class="form-field__title">Должность</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-xl-2 mb-3">
+                            <label class="form-field">
+                                <span class="form-field__title">Стаж работы</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label class="form-field">
+                                <span class="form-field__title">Среднемесячный доход руб.</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-field">
+                                <span class="form-field__title">Среднемесячные расходы руб.</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-field">
+                                <span class="form-field__title">Количество иждивенцев</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__text">
+                            <span class="checkbox__gal">
+                                <svg width="14" height="11">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                            </span>
+                            <span class="checkbox__in">
+                                Даю согласие на на <a class="link link--primary" href="#">передачу информации от работодателя</a>
+                            </span>
+                        </span>
+                    </label>
+
+                    <div class="form-field__title mt-3">Номер свидетельства об аттестации сил обеспечения транспортной безопасности (при наличии)</div>
+                    <div class="row mb-4">
+                        <div class="col-md-4 col-xl-3">
+                            <label class="form-field">
+                                <input type="text" class="form-field__input js-mask-eleven-symbols" placeholder="_ _ _ _ _ _ _ _ _ _ _">
+                            </label>
+                        </div>
+                    </div>
+                    <a href="registration-4.html" class="button button--primary"><span>Далее</span></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

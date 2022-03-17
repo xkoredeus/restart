@@ -1,0 +1,73 @@
+@mixin title-h1 {
+  @include font-a-medium;
+  font-size: 2.7778rem;
+  line-height: 1;
+
+  @include r(768) {
+    font-size: 2rem;
+  }
+
+  @include r(576) {
+    font-size: 1.7rem;
+  }
+}
+
+@mixin title-h2 {
+  @include font-a-medium;
+  font-size: 2.222rem;
+  line-height: 1;
+
+  @include r(768) {
+    font-size: 1.7857rem;
+  }
+
+  @include r(576) {
+    font-size: 1.4rem;
+  }
+}
+
+@mixin title-h3 {
+  @include font-a-medium;
+  font-size: 1.7778rem;
+
+  @include r(768) {
+    font-size: 1.4rem;
+  }
+
+  @include r(576) {
+    font-size: 1.2rem;
+  }
+}
+
+@mixin title-h4 {
+  @include font-a-medium;
+  font-size: 1.3889rem;
+
+  @include r(768) {
+    font-size: 1.2rem;
+  }
+
+  @include r(576) {
+    font-size: 1rem;
+  }
+}
+
+.title-h1 {
+  @include title-h1;
+}
+
+.title-h2 {
+  @include title-h2;
+}
+
+.title-h3 {
+  @include title-h3;
+}
+
+.title-h4 {
+  @include title-h4;
+}
+
+.lh-16 {
+  line-height: 1.6;
+}

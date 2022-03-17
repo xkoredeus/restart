@@ -1,0 +1,41 @@
+.crumbs {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0 0;
+
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      position: relative;
+      margin-right: 15px;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 7px;
+        height: 7px;
+        top: 6px;
+        right: -16px;
+        border: 4px solid $tr;
+        border-left-color: #9E9E9E;
+
+        @include r(1200) {
+          top: 4px;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 7px;
+        height: 7px;
+        top: 6px;
+        right: -14px;
+        border: 4px solid $tr;
+        border-left-color: #fff;
+
+        @include r(1200) {
+          top: 4px;
+        }
+      }
+    }
+  }
+}

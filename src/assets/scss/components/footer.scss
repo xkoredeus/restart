@@ -1,0 +1,17 @@
+.footer {
+  position: relative;
+  padding: 60px 0;
+  background-color: $white;
+
+  @include r(1200) {
+    text-align: center;
+  }
+
+  @include r(768) {
+    padding: 40px 0;
+  }
+
+  @include r(576) {
+    padding: 30px 0;
+  }
+}

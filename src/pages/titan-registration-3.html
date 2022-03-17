@@ -1,0 +1,160 @@
+<section class="section--small">
+    <div class="container">
+        {{> button-back}}
+        <div class="section__title">Регистрация личного кабинета</div>
+        {{> tariff}}
+        <div class="steps-list">
+            <div class="steps-list__item">Основные сведения</div>
+            <div class="steps-list__item steps-list__item--active">Контактные данные</div>
+            <div class="steps-list__item">Работодатели</div>
+            <div class="steps-list__item">Платежные реквизиты</div>
+            <div class="steps-list__item">Членство в профсоюзе</div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-xl-10">
+                    <div class="form-field__title mb-2">Ваш телефон*</div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="font-a-medium">+7 (909) 123-45-67</div>
+                        <div class="divider mx-3"></div>
+                        <svg class="mr-2" width="39" height="39">
+                            <use xlink:href="#checked"></use>
+                        </svg>
+                        <div class="color-grey font-l-regular">Подтвержден</div>
+                    </div>
+
+                    <div class="form-field__title mb-2">Электронная почта*</div>
+                    <div class="row mb-4 align-items-xl-center">
+                        <div class="col-xl-7 mb-2 mb-xl-0">
+                            <input type="email" class="form-field__input" value="ivanov@mail.ru">
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="d-flex flex-column align-items-start align-items-md-center flex-md-row">
+                                <button class="button button--primary"><span>Подтвердить</span></button>
+                                <div class="mt-3 mt-md-0 ml-md-3 font-14 color-grey font-l-regular">Письмо для подтверждения e-&nbsp;mail отправлено на&nbsp;указанный вами адрес</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mb-xl-4">
+                        <div class="form-field__title mb-2">Мессенджер для связи</div>
+                        <div class="d-flex flex-column align-items-start align-items-md-center flex-md-row mb-4 mb-xl-3">
+                            <label class="form-field form-field--short w-100 mb-0">
+                                <input type="text" class="form-field__input form-field__input js-tel" value="+7 (909) 123 - 45 - 67" placeholder="+7 (___) ___ - __ - __">
+                                <span class="form-field__icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#ws"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                            <button class="button button--primary ml-md-3 mt-3 mt-md-0"><span>Привязать</span></button>
+                        </div>
+                        <div class="d-flex flex-column align-items-start align-items-md-center flex-md-row mb-4 mb-xl-3">
+                            <label class="form-field form-field--short w-100 mb-0">
+                                <input type="text" class="form-field__input form-field__input js-tel" placeholder="+7 (___) ___ - __ - __">
+                                <span class="form-field__icon">
+                                    <svg width="20" height="22">
+                                        <use xlink:href="#vb"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                            <button class="button button--primary ml-md-3 mt-3 mt-md-0"><span>Привязать</span></button>
+                        </div>
+                        <div class="d-flex flex-column align-items-start align-items-md-center flex-md-row mb-4 mb-xl-3">
+                            <label class="form-field form-field--short w-100 mb-0">
+                                <input type="text" class="form-field__input form-field__input" placeholder="@">
+                                <span class="form-field__icon">
+                                    <svg width="20" height="22">
+                                        <use xlink:href="#tg"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                            <button class="button button--primary ml-md-3 mt-3 mt-md-0"><span>Привязать</span></button>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mb-xl-4">
+                        <div class="form-field__title mb-2">Соцсети</div>
+                        <label class="form-field form-field--short mb-2">
+                            <input type="text" class="form-field__input form-field__input">
+                            <span class="form-field__icon">
+                                <svg width="10" height="18">
+                                    <use xlink:href="#fb"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="form-field form-field--short mb-2">
+                            <input type="text" class="form-field__input form-field__input">
+                            <span class="form-field__icon">
+                                <svg width="12" height="20">
+                                    <use xlink:href="#ok"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="form-field form-field--short">
+                            <input type="text" class="form-field__input form-field__input">
+                            <span class="form-field__icon">
+                                <svg width="20" height="12">
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="mb-3 mb-xl-4">
+                        <div class="form-field__title mb-3">Выберите основные каналы связи</div>
+                        <div class="d-flex flex-wrap">
+                            <label class="checkbox mr-3 mb-3">
+                                <input type="checkbox" checked>
+                                <span class="checkbox__text">
+                                    <span class="checkbox__gal">
+                                        <svg width="14" height="11">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__in font-a-regular">Push-уведомления</span>
+                                </span>
+                            </label>
+                            <label class="checkbox mr-3 mb-3">
+                                <input type="checkbox">
+                                <span class="checkbox__text">
+                                    <span class="checkbox__gal">
+                                        <svg width="14" height="11">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__in font-a-regular">SMS-уведомления</span>
+                                </span>
+                            </label>
+                            <label class="checkbox mr-3 mb-3">
+                                <input type="checkbox">
+                                <span class="checkbox__text">
+                                    <span class="checkbox__gal">
+                                        <svg width="14" height="11">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__in font-a-regular">Электронная почта</span>
+                                </span>
+                            </label>
+                            <label class="checkbox mr-3 mb-3">
+                                <input type="checkbox">
+                                <span class="checkbox__text">
+                                    <span class="checkbox__gal">
+                                        <svg width="14" height="11">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__in font-a-regular">Мессенджеры</span>
+                                </span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <a href="titan-registration-4.html" class="button button--primary"><span>Далее</span></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

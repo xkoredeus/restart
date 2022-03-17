@@ -1,0 +1,151 @@
+.tariff-section {
+  margin-bottom: 44px;
+
+  @include r(1200) {
+    margin-bottom: 30px;
+  }
+
+  @include r(768) {
+    margin-bottom: 25px;
+  }
+}
+
+.tariff {
+  color: $white;
+  position: relative;
+  padding: 22px 43px;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @include ease;
+  cursor: pointer;
+
+  @include r(1576) {
+    padding: 20px 30px;
+  }
+
+  @include r(1200) {
+    padding: 12px 20px;
+  }
+
+  &--active {
+    box-shadow: 0 30px 30px rgba(48, 46, 186, 0.25);
+
+    .tariff__bg {
+      opacity: 1;
+    }
+    .tariff__description {
+      opacity: 1;
+    }
+  }
+
+  &__bg {
+    @include ovl;
+    opacity: .6;
+  }
+
+  &__top {
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #F6F6F6;
+  }
+
+  &__info {
+    position: relative;
+  }
+
+  &__description {
+    opacity: .7;
+  }
+}
+
+.tariff-info {
+  margin-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+
+  .select2-container--default {
+    min-width: 180px;
+  }
+}
+
+
+.tariff-label {
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 24px;
+  border-radius: 5px;
+
+  &--success {
+    color: $white;
+    background-color: #71DA57;
+  }
+
+  &--warning {
+    background-color: #FFE500;
+  }
+}
+
+.tariff-edit {
+  margin-left: 25px;
+  padding-left: 25px;
+  border-left: 1px solid #BFBFBF;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.tariff-price-info {
+  position: relative;
+  
+  svg {
+    cursor: pointer;
+  }
+
+  &:hover {
+    .tariff-price-info__layout {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__layout {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 8px;
+    opacity: 0;
+    visibility: hidden;
+    @include ease;
+  }
+
+  &__content {
+    position: relative;
+    font-size: 11px;
+    background-color: $white;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    display: inline-block;
+    padding: 10px;
+    min-width: 153px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-bottom: solid 5px $tr;
+      border-left: solid 5px $white;
+      border-right: solid 5px $tr;
+      border-top: solid 5px $white;
+      top: 100%;
+      left: 0;
+    }
+  }
+}

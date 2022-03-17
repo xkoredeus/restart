@@ -1,0 +1,156 @@
+<section class="section--small">
+    <div class="container">
+        {{> button-back}}
+        <div class="section__title">Регистрация личного кабинета</div>
+        {{> tariff}}
+        <form>
+            <div class="row">
+                <div class="col-xl-10">
+                    <div class="form-field mb-3 mb-md-4">
+                        <span class="form-field__title">Менялись ли ваши фамилия, имя, отчество?</span>
+                        <div class="d-flex align-items-center mb-2 mb-xl-0">
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="changed">
+                                <span class="radio__text">нет</span>
+                            </label>
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="changed">
+                                <span class="radio__text">Да (Укажите дополнительно)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-xl-3">
+                        <div class="col-md-8 mb-3 mb-md-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Предыдущее ФИО</span>
+                                <input type="text" class="form-field__input" placeholder="Фамилия">
+                            </label>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Дата изменения</span>
+                                <input type="date" class="form-field__input unstyled">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field__title upp">Фио</div>
+                    <div class="row mb-xl-3">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <label class="form-field">
+                                <input type="text" class="form-field__input" placeholder="Фамилия">
+                            </label>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <label class="form-field">
+                                <input type="text" class="form-field__input" placeholder="Имя">
+                            </label>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <label class="form-field">
+                                <input type="text" class="form-field__input" placeholder="Отчество">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-xl-3">
+                        <div class="col-xl-2 col-md-4 mb-3 mb-md-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Дата рождения</span>
+                                <input type="date" class="form-field__input unstyled tac">
+                            </label>
+                        </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Место рождения</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field__title">Телефон</div>
+                    <div class="row mb-3 mb-xl-4 align-items-xl-center">
+                        <div class="col-sm-5 col-md-3 mb-3 mb-md-0">
+                            <label class="form-field mb-xl-0">
+                                <input type="tel" class="form-field__input js-tel" placeholder="+7 (___) ___ - __ - __">
+                            </label>
+                        </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <button class="button button--primary" data-fancybox data-src="#popup-confirm-phone">
+                                <span>Подвердить</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-field mb-4 mb-md-5">
+                        <span class="form-field__title">Являетесь ли вы иностранным публичным должностным лицом?</span>
+                        <div class="d-flex align-items-center mb-2 mb-xl-0">
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="foreign">
+                                <span class="radio__text">нет</span>
+                            </label>
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="foreign">
+                                <span class="radio__text">Да</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field mb-3 mb-md-4">
+                        <span class="form-field__title">Являетесь ли вы супругом(ой) иностранного публичного должностного лица?</span>
+                        <div class="d-flex align-items-center mb-2 mb-xl-0">
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="foreign marriage">
+                                <span class="radio__text">нет</span>
+                            </label>
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="foreign marriage">
+                                <span class="radio__text">Да</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-xl-8">
+                            <label class="form-field">
+                                <span class="form-field__title">ФИО Супруги(а)</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field mb-4">
+                        <span class="form-field__title">Являетесь ли вы близким родственником иностранного публичного должностного лица?</span>
+                        <div class="d-flex align-items-center mb-2 mb-xl-0">
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="foreign relative">
+                                <span class="radio__text">нет</span>
+                            </label>
+                            <label class="radio mr-4 mr-xl-5">
+                                <input type="radio" name="foreign relative">
+                                <span class="radio__text">Да</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mb-xl-4">
+                        <div class="col-xl-8 mb-md-0">
+                            <label class="form-field">
+                                <span class="form-field__title">ФИО родственника</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 mb-xl-4">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__text">
+                                <span class="checkbox__gal">
+                                    <svg width="14" height="11">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                <span class="checkbox__in">
+                                    Даю согласие на <a href="#" class="link link--primary">обработку персональных данных</a>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                    <a href="registration-1.html" class="button button--primary"><span>Войти</span></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

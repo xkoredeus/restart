@@ -1,0 +1,137 @@
+.radio {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0;
+
+  &__text {
+    position: relative;
+    @include font-16;
+    @include font-l-regular;
+    padding-left: 35px;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+
+    @include r(768) {
+      padding-left: 28px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -11px;
+      left: -2px;
+      width: 22px;
+      height: 22px;
+      border-radius: 2px;
+      border: 1px solid $darkGrey;
+      background: #fff;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -6px;
+      left: 3px;
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(180deg, #1816AE 0%, #050671 100%);
+      border-radius: 2px;
+      opacity: 0;
+      transform: scale(0);
+      transition: 0.3s;
+
+      a {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.radio {
+  input[type="radio"] {
+    & + .radio__text {
+      &::before {
+        border-radius: 50%;
+      }
+      &::after {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+    &:checked + .radio__text,
+    &:checked + .radio__text {
+      &::after {
+        opacity: 1;
+        transform: scale(1);
+      }
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.checkbox {
+  position: relative;
+  margin-bottom: 0;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+
+    &:checked + .checkbox__text {
+      .checkbox__gal {
+        svg {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+  }
+
+  &__text {
+    @include font-16;
+    @include font-l-regular;
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    grid-gap: 15px;
+  }
+
+  &__in {
+    padding-top: 2px;
+  }
+
+  &__gal {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid $darkGrey;
+    background: #fff;
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      visibility: hidden;
+      @include ease;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<section class="section--small">
+    <div class="container">
+        {{> button-back}}
+        <div class="section__title">Регистрация личного кабинета</div>
+        {{> tariff}}
+        <div class="steps-list">
+            <div class="steps-list__item steps-list__item--active">Основные сведения</div>
+            <div class="steps-list__item">Контактные данные</div>
+            <div class="steps-list__item">Работодатели</div>
+            <div class="steps-list__item">Платежные реквизиты</div>
+            <div class="steps-list__item">Членство в профсоюзе</div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-xl-11">
+                    <div class="mb-4 mb-xl-5">
+                        <a href="#" class="button button--primary"><span>Зарегестрироваться с Titan ID</span></a>
+                    </div>
+                    <div class="row mb-xl-3 align-items-end">
+                        <div class="col-xl-1 col-md-3 col-5 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Паспорт</span>
+                                <input type="text" class="form-field__input tac js-mask-four-symbols" placeholder="_ _ _ _">
+                            </label>
+                        </div>
+                        <div class="col-xl-2 col-md-3 col-7 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <input type="text" class="form-field__input tac js-mask-six-symbols" placeholder="_ _ _ _ _ _">
+                            </label>
+                        </div>
+                        <div class="col-xl-2 col-md-3 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Код подразделения</span>
+                                <input type="text" class="form-field__input tac">
+                            </label>
+                        </div>
+                        <div class="col-xl-4 col-md-5 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Кем выдан</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                        <div class="col-xl-2 col-md-4 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Когда выдан </span>
+                                <input type="date" class="form-field__input unstyled">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-xl-3">
+                        <div class="col-xl-2 col-md-3 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <span class="form-field__title">СНИЛС</span>
+                                <input type="text" class="form-field__input tac js-mask-eleven-symbols" placeholder="_ _ _ _ _ _ _ _ _ _ _">
+                            </label>
+                        </div>
+                        <div class="col-xl-2 col-md-3 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <span class="form-field__title">ИНН</span>
+                                <input type="text" class="form-field__input tac js-mask-eleven-symbols" placeholder="_ _ _ _ _ _ _ _ _ _ _">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mb-xl-3">
+                        <div class="col-xl-6 col-md-6 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <span class="form-field__title">Адрес регистрации</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field__title mb-2">Место жительства</div>
+                    <div class="row mb-3 mb-xl-3">
+                        <div class="col-12 mb-3">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkbox__text">
+                                    <span class="checkbox__gal">
+                                        <svg width="14" height="11">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="checkbox__in font-a-regular">
+                                        Совпадает с адресом регистрации
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-xl-6 col-md-6 mb-3 mb-xl-0">
+                            <label class="form-field">
+                                <input type="text" class="form-field__input">
+                            </label>
+                        </div>
+                    </div>
+                    <a href="registration-2.html" class="button button--primary"><span>Далее</span></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

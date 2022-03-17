@@ -1,0 +1,35 @@
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+      &::after {
+        display: none;
+      }
+
+      svg {
+        stroke: $dark;
+        @include ease;
+      }
+
+      &:hover {
+        svg {
+          stroke: $red;
+        }
+      }
+
+      //&.swiper-button-disabled {
+      //  opacity: ;
+      //}
+    }
+
+    @include rmin(1200) {
+      &-next {
+        right: -40px;
+      }
+
+      &-prev {
+        left: -40px;
+      }
+    }
+  }
+}

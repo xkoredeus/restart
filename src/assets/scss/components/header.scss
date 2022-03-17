@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  padding: 29px 0;
+  z-index: 2;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+
+  &:hover {
+    .header-logo__picture img {
+      transform: scale(0.95);
+    }
+  }
+
+  &__picture {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 21px;
+
+    img {
+      position: absolute;
+      left: -50px;
+      top: -30px;
+      @include ease;
+    }
+  }
+
+  &__title {
+    @include font-20;
+
+    span {
+      @include font-a-bold;
+      color: $darkBlue;
+    }
+  }
+}

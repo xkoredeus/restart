@@ -1,0 +1,25 @@
+.link {
+  color: $dark;
+  display: inline;
+  border-bottom: 1px solid $dark;
+  text-align: left;
+
+  &--no-border {
+    border-bottom: none !important;
+  }
+
+  &:hover {
+    color: $grey;
+    border-bottom-color: $grey;
+  }
+
+  &--primary {
+    color: $blue;
+    border-bottom-color: $blue;
+  }
+
+  &--secondary {
+    color: $purple;
+    border-bottom-color: $purple;
+  }
+}

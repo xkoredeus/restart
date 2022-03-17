@@ -1,0 +1,62 @@
+<section class="section--small login">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7">
+                <a href="#" class="button-back mb-4">
+                    <svg width="40" height="9">
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                    <span class="ml-2 ml-xl-3">Назад</span>
+                </a>
+                <form class="login-form">
+                    <div class="section__title">Авторизация</div>
+                    <div class="login-form__fields mb-4 mb-xl-5">
+                        <label class="form-field mb-3 mb-xl-4">
+                            <span class="form-field__title">Телефон или электронная почта </span>
+                            <input class="form-field__input" type="text">
+                        </label>
+                        <span class="d-none d-md-block"></span>
+                        <label class="form-field mb-3 mb-xl-4">
+                            <span class="form-field__title">Пароль (при наличии)</span>
+                            <input class="form-field__input" type="password">
+                        </label>
+                        <button class="link link--primary link--no-border">Забыли пароль?</button>
+                    </div>
+                    <div class="font-l-regular mb-3 mb-xl-4">Пожалуйста, выберите ваш любимый мессенджер и мы пришлем в него код:</div>
+                    <div class="d-flex justify-content-center justify-content-sm-start align-items-center mb-4 mb-xl-5">
+                        <label class="radio mr-4 mr-xl-5">
+                            <input type="radio" name="soc">
+                            <span class="radio__text">
+                                <svg width="30" height="30">
+                                    <use xlink:href="#ws"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="radio mr-4 mr-xl-5">
+                            <input type="radio" name="soc">
+                            <span class="radio__text">
+                                <svg width="28" height="30">
+                                    <use xlink:href="#vb"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="soc">
+                            <span class="radio__text">
+                                <svg width="28" height="26">
+                                    <use xlink:href="#tg"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+                    <button class="button button--primary" type="submit"><span>Войти</span></button>
+                </form>
+            </div>
+            <div class="col-xl-5 d-none d-xl-block">
+                <div class="login-picture__wrapper">
+                    <img class="login-picture" src="{{root}}assets/img/tl-train.png" alt="Поезд">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,75 @@
+<section class="section--small">
+    <div class="container">
+        {{> button-back}}
+        <div class="section__title">Регистрация личного кабинета</div>
+        <div class="mb-3 mb-xl-4">Для того, чтобы мы убедились в том, что это точно Вы, загрузите пожалуйста следующие фотографии</div>
+        <form>
+            <div class="row">
+                <div class="col-xl-9">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="font-16 font-l-regular mb-2 mb-md-3">Лицевая сторона вашего паспорта</div>
+                            <label class="file">
+                                <input type="file" class="js-upload-file" accept="image/jpeg,image/png,image/gif">
+                                <span class="file__in">
+                                    <img class="file__picture" src="" alt="фото паспорта">
+                                    <span class="file__icon">
+                                        <svg width="94" height="125">
+                                            <use xlink:href="#file-icon-1"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="link">Загрузить</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="font-16 font-l-regular mb-2 mb-md-3">Страница с регистрацией</div>
+                            <label class="file">
+                                <input type="file" class="js-upload-file" accept="image/jpeg,image/png,image/gif">
+                                <span class="file__in">
+                                    <img class="file__picture" src="" alt="фото паспорта">
+                                    <span class="file__icon">
+                                        <svg width="127" height="127">
+                                            <use xlink:href="#file-icon-2"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="link">Загрузить</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="font-16 font-l-regular mb-2 mb-md-3">Селфи с лицевой стороной паспорта</div>
+                            <label class="file">
+                                <input type="file" class="js-upload-file" accept="image/jpeg,image/png,image/gif">
+                                <span class="file__in">
+                                    <img class="file__picture" src="" alt="фото паспорта">
+                                    <span class="file__icon">
+                                        <svg width="127" height="127">
+                                            <use xlink:href="#file-icon-3"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="link">Загрузить</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3 my-xl-4">
+            <div class="row">
+                <div class="col-12 mb-3 mb-md-4">По желанию придумайте логин и пароль (это необязательно) и нажмите кнопку Далее</div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-field mb-3">
+                        <span class="form-field__title">Придумайте пароль</span>
+                        <input type="password" class="form-field__input">
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field__title">Повторите пароль</span>
+                        <input type="password" class="form-field__input">
+                    </label>
+                </div>
+            </div>
+            <a href="registration-success.html" class="button button--primary"><span>Далее</span></a>
+        </form>
+    </div>
+</section>

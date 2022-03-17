@@ -1,0 +1,298 @@
+.offer {
+  padding: 175px 0;
+
+  @include r(1200) {
+    padding: 60px 0;
+    text-align: center;
+  }
+}
+
+.offer-info {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-picture {
+  position: absolute;
+  left: -70%;
+  top: -100%;
+  z-index: 1;
+
+  @include r(1200) {
+    position: relative;
+    left: auto;
+    top: auto;
+
+    max-width: 400px;
+    height: auto;
+  }
+
+  @include r(768) {
+    max-width: 200px;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1500px;
+      height: 1500px;
+      left: -70%;
+      top: -250%;
+      background: #B871FF;
+      opacity: 0.3;
+      filter: blur(30px);
+      border-radius: 50%;
+
+      @include r(1200) {
+        width: 700px;
+        height: 700px;
+        left: auto;
+        top: 0;
+        right: -30%;
+      }
+    }
+  }
+}
+
+.products {
+  position: relative;
+  z-index: 1;
+
+  @include r(1200) {
+    margin-top: -120px;
+  }
+
+  @include r(768) {
+    margin-top: -50px;
+  }
+
+  &__in {
+    position: relative;
+    min-height: 650px;
+
+    @include r(768) {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.products-overlay {
+  &::before {
+    position: absolute;
+    content: '';
+    width: 5000px;
+    height: 600px;
+    background: linear-gradient(180deg, $tr, rgba(255,255,255,1) 33%, rgba(255,255,255,0.9) 65%, $tr 100%);
+    top: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 5000%;
+    height: 240px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, $tr, #f9fafc 60%, #f9fafc 100%);
+    z-index: 2;
+  }
+}
+
+.products-clouds {
+  position: absolute;
+  object-fit: contain;
+  left: 50%;
+  top: 180px;
+  width: calc(100% + 200px);
+  transform: translateX(-50%);
+
+  @include r(1200) {
+    display: none;
+  }
+}
+
+.products-info {
+  position: relative;
+  z-index: 3;
+  @include rmin(1200) {
+    transform: translateY(-70px);
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @include r(768) {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:hover {
+    .product-card {
+      box-shadow: 0 30px 30px rgba(46, 45, 150, 0.2);
+    }
+  }
+
+  &-number {
+    color: #4746C0;
+    margin-left: 33px;
+    margin-bottom: 10px;
+
+    @include r(1200) {
+      margin-left: 15px;
+    }
+  }
+
+  &-card {
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(73, 71, 194, 0.2);
+    @include ease-in-out;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+  &-top {
+    position: relative;
+    padding: 25px 33px;
+    color: $white;
+
+    @include r(1200) {
+      padding: 20px 15px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 1px;
+      background-color: $white;
+    }
+  }
+
+  &-price {
+    display: grid;
+    grid-template-columns: 50px auto;
+
+    @include r(1200) {
+      grid-template-columns: 40px auto;
+    }
+  }
+
+  &-info {
+    padding: 25px 33px;
+    background-color: $white;
+    height: 100%;
+
+    @include r(1200) {
+      padding: 20px 15px;
+    }
+  }
+}
+
+.cabinets {
+  position: relative;
+  background-color: #f9fafc;
+  margin-top: -50px;
+  z-index: 1;
+  padding-bottom: 130px;
+
+  @include r(1200) {
+    text-align: center;
+  }
+
+  @include r(768) {
+    margin-top: 0;
+  }
+}
+
+.cabinets-pictures {
+  position: relative;
+}
+
+.cabinets-picture {
+  &:first-child {
+    position: relative;
+    z-index: 1;
+  }
+
+  @include r(1576) {
+    max-height: 600px;
+  }
+
+  @include r(1200) {
+    max-height: 350px;
+  }
+
+  &--absolute {
+    position: absolute;
+    left: 220px;
+    bottom: -126px;
+
+    @include r(1200) {
+      left: 50%;
+    }
+  }
+}
+
+.cabinets-border {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+
+.site {
+  @include cv;
+
+  @include r(1200) {
+    text-align: center;
+  }
+}
+
+.site-banner {
+  position: relative;
+  @include cv;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover::before {
+    transform: scale(1.4);
+  }
+
+  &::before {
+    @include ovl;
+    background-image: url('../img/rko-bg.jpg');
+    @include ease-in-out;
+    @include cv;
+  }
+
+  &__in {
+    position: relative;
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+    align-items: center;
+    color: $white;
+
+    @include r(576) {
+      grid-template-columns: auto;
+      grid-gap: 10px;
+    }
+  }
+}
