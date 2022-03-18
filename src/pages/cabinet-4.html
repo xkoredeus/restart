@@ -1,0 +1,173 @@
+---
+layout: cabinet
+---
+<section>
+    <div class="font-a-medium font-20 mb-2">Карты и счета</div>
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="font-l-regular font-20 mb-3 mb-xl-4">Описание непосредственно раздела платежной информации клиента. <br class="d-none d-xl-inline"> Выбрать для оплаты и получения займа можно только карту или только счет</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-11">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-4">
+                    <div class="card">
+                        <div class="card__top">
+                            <input class="form-field__input js-mask-card card__input-number mb-2" type="text" placeholder="Номер вашей карты">
+                            <input class="form-field__input js-mask-card-period card__input-period mb-3" type="text" placeholder="__ / __">
+                        </div>
+                        <button class="button button--primary"><span>Добавить</span></button>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-4">
+                    <label class="card">
+                        <input type="radio" checked name="payment-card">
+                        <span class="card__top">
+                        <span class="card__title mb-3 mb-xl-4">
+                            <span class="card__gal">
+                                <svg>
+                                    <use xlink:href="#checked"></use>
+                                </svg>
+                            </span>
+                            <span>Карта MasterCard</span>
+                        </span>
+                        <span class="card__number font-25 font-l-light">1234 5678 9101 1213</span>
+                    </span>
+                        <span class="font-25 color-grey font-l-light">12/24</span>
+                        <img class="card__picture" src="{{root}}assets/img/mastercard.jpg" alt="мастеркард">
+                    </label>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-4">
+                    <label class="card">
+                        <input type="radio" name="payment-card">
+                        <span class="card__top">
+                        <span class="card__title mb-3 mb-xl-4">
+                            <span class="card__gal">
+                                <svg>
+                                    <use xlink:href="#checked"></use>
+                                </svg>
+                            </span>
+                            <span>Карта VISA</span>
+                        </span>
+                        <span class="card__number font-25 font-l-light">4434 5678 9101 1212</span>
+                    </span>
+                        <span class="font-25 color-grey font-l-light">03/26</span>
+                        <img class="card__picture" src="{{root}}assets/img/visa.jpg" alt="виза">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-3 mb-xl-4">
+    <div class="row">
+        <div class="col-xl-11">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-4">
+                    <div class="card">
+                        <div class="card__top font-25 mb-3">Вы можете добавить новый&nbsp;счет</div>
+                        <button class="button button--primary js-toggle-bill-mode"><span>Добавить</span></button>
+                        <div class="bill-form w-100">
+                            <label class="form-field mb-2 mb-md-3 w-100">
+                                <span class="form-field__title">Р/с</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                            <label class="form-field mb-2 mb-md-3 w-100">
+                                <span class="form-field__title">АКБ</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                            <label class="form-field mb-2 mb-md-3 w-100">
+                                <span class="form-field__title">БИК</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                            <label class="form-field mb-2 mb-md-3 w-100">
+                                <span class="form-field__title">К/c</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                            <label class="form-field mb-2 mb-md-3 w-100">
+                                <span class="form-field__title">ФИО владельца счета</span>
+                                <input type="text" class="form-field__input">
+                            </label>
+                            <button class="button button--primary"><span>Добавить</span></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-4">
+                    <label class="card">
+                        <input type="radio" checked name="payment-bill">
+                        <span class="card__top mb-2 mb-xl-3">
+                            <span class="card__title">
+                                <span class="card__gal">
+                                    <svg>
+                                        <use xlink:href="#checked"></use>
+                                    </svg>
+                                </span>
+                                <span class="font-25">Счет №1</span>
+                            </span>
+                        </span>
+                        <span class="card__info font-16">
+                            <span>
+                                <span class="font-l-bold">Р/с:</span>
+                                <span class="font-l-light color-grey">40701810988000000275</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">АКБ:</span>
+                                <span class="font-l-light color-grey">«ФОРА-БАНК» (АО),</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">БИК:</span>
+                                <span class="font-l-light color-grey">044525341</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">К/с:</span>
+                                <span class="font-l-light color-grey">30101810300000000341 в ГУ Банка России по ЦФО</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">Владелец:</span>
+                                <span class="font-l-light color-grey">Иванов Иван Иванович</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-4">
+                    <label class="card">
+                        <input type="radio" checked name="payment-bill">
+                        <span class="card__top mb-2 mb-xl-3">
+                            <span class="card__title">
+                                <span class="card__gal">
+                                    <svg>
+                                        <use xlink:href="#checked"></use>
+                                    </svg>
+                                </span>
+                                <span class="font-25">Счет №2</span>
+                            </span>
+                        </span>
+                        <span class="card__info font-16">
+                            <span>
+                                <span class="font-l-bold">Р/с:</span>
+                                <span class="font-l-light color-grey">40701810988000000275</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">АКБ:</span>
+                                <span class="font-l-light color-grey">«ФОРА-БАНК» (АО),</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">БИК:</span>
+                                <span class="font-l-light color-grey">044525341</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">К/с:</span>
+                                <span class="font-l-light color-grey">30101810300000000341 в ГУ Банка России по ЦФО</span>
+                            </span>
+                            <span>
+                                <span class="font-l-bold">Владелец:</span>
+                                <span class="font-l-light color-grey">Иванов Иван Иванович</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

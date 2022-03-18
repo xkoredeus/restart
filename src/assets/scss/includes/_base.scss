@@ -131,6 +131,19 @@ a {
       display: none;
     }
   }
+
+  &--cabinet {
+    .header {
+      padding: 29px 0 38px;
+    }
+
+    &::before {
+      left: -150px;
+    }
+    &::after {
+      top: -300px;
+    }
+  }
 }
 
 /* Custom animation */
@@ -208,6 +221,12 @@ a {
     @include r(768) {
       font-size: 0.6rem;
     }
+  }
+
+  &__image {
+    position: relative;
+    z-index: 1;
+    transform: scale(.8);
   }
 }
 

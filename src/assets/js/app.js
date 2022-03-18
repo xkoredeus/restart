@@ -14,6 +14,22 @@ $(() => {
   $('.js-mask-card-period').mask("99 / 99");
 });
 
+$(() => {
+  if ($(window).width() < 1200) {
+    $('.nav-wrapper').hide();
+    $('.js-toggle-nav').fadeIn();
+  }
+
+  $(window).resize(function() {
+    if ($(window).width() < 1200) {
+      $('.nav-wrapper').hide();
+      $('.js-toggle-nav').fadeIn();
+    } else {
+      $('.js-toggle-nav').hide();
+      $('.nav-wrapper').fadeIn();
+    }
+  })
+})
 
 $(() => {
   if ($("input[type='date']").val() != "") {
@@ -38,10 +54,10 @@ $(() => {
       reader.onload = function (e) {
         console.log($(this));
         input
-            .parents('.file')
-            .addClass('file--uploaded')
-            .find('.file__picture')
-            .attr('src', e.target.result)
+          .parents('.file')
+          .addClass('file--uploaded')
+          .find('.file__picture')
+          .attr('src', e.target.result)
       };
 
       reader.readAsDataURL($(this)[0].files[0]);
@@ -99,7 +115,7 @@ $(() => {
     animationDuration: 600,
     animationEffect: 'slide-in-in',
     touch: false,
-
+    scrolling: true,
   });
   // $(document).on('click', function (e) {
   //   const container = $('.header');

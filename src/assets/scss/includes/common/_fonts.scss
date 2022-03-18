@@ -51,7 +51,9 @@ $font-32: 1.7778rem;
 @mixin font-14 {
   font-size: $font-14;
 }
-
+@mixin font-18 {
+  font-size: 1rem;
+}
 @mixin font-16 {
   font-size: $font-16;
 }
@@ -77,6 +79,7 @@ $font-32: 1.7778rem;
 }
 .font-14 {@include font-14}
 .font-16 {@include font-16}
+.font-18 {@include font-18}
 .font-20 {@include font-20}
 .font-22 {@include font-22}
 .font-25 {@include font-25}

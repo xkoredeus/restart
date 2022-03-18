@@ -7,6 +7,10 @@ $darkGrey: #656565;
 $lightGrey: #A7A7A7;
 $tr: transparent;
 $black: #000;
+$warning: #FF8266;
+$success: #71DA57;
+$error: #FF8266;
+$process: #FFA800;
 
 .color-white {
   color: #fff;
@@ -25,4 +29,17 @@ $black: #000;
 
 .color-blue {
   color: $blue;
+}
+
+.color-success {
+  color: $success;
+}
+.color-warning {
+  color: $warning;
+}
+.color-process {
+  color: $process;
+}
+.color-error {
+  color: $error;
 }

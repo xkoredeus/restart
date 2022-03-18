@@ -1,5 +1,4 @@
 .radio {
-  cursor: pointer;
   position: relative;
   margin-bottom: 0;
 
@@ -70,7 +69,6 @@
     opacity: 0;
     width: 100%;
     cursor: pointer;
-    &:checked + .radio__text,
     &:checked + .radio__text {
       &::after {
         opacity: 1;
@@ -80,13 +78,19 @@
         background-color: #fff;
       }
     }
+    &:disabled {
+      cursor: auto;
+    }
+    &:disabled + .radio__text {
+      opacity: .8;
+      cursor: auto;
+    }
   }
 }
 
 .checkbox {
   position: relative;
   margin-bottom: 0;
-  cursor: pointer;
 
   input {
     position: absolute;
@@ -102,6 +106,13 @@
         }
       }
     }
+    &:disabled {
+      cursor: auto;
+    }
+    &:disabled + .checkbox__text {
+      opacity: .8;
+      cursor: auto;
+    }
   }
 
   &__text {
@@ -110,6 +121,7 @@
     display: grid;
     grid-template-columns: 22px 1fr;
     grid-gap: 15px;
+    cursor: pointer;
   }
 
   &__in {
