@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{!— Required meta tags --}}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#07078D">
+    <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+    <title>New Project</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
+<body>
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> preloader}}
+    <main role="main" class="layout layout--cabinet">
+        <div class="layout__in">
+            {{> header--cabinet}}
+            <div class="cabinet-content">
+                {{> crumbs}}
+                <div class="container">
+                    <div class="section__title">Личный кабинет</div>
+                    <div class="row">
+                        <div class="col-xl-3 mb-3 mb-xl-0">
+                            <button class="nav-button button button--secondary js-toggle-nav" data-src="#nav" data-fancybox><span>Показать навигацию</span></button>
+                            <div class="nav-wrapper" id="nav">
+                                <nav class="nav">
+                                    <a href="cabinet-1.html" class="nav-link nav-link--active">
+                                        <span>Текущий займ</span>
+                                        <svg class="ml-2" width="23" height="24">
+                                            <use xlink:href="#warning"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="cabinet-2.html" class="nav-link">
+                                        <span>Заявки</span>
+                                        <svg class="ml-2" width="23" height="24">
+                                            <use xlink:href="#warning"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="cabinet-3.html" class="nav-link">
+                                        <span>История займов</span>
+                                        <svg class="ml-2" width="23" height="24">
+                                            <use xlink:href="#warning"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="cabinet-4.html" class="nav-link">
+                                        <span>Карты и счета</span>
+                                        <svg class="ml-2" width="23" height="24">
+                                            <use xlink:href="#warning"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="cabinet-5.html" class="nav-link">
+                                        <span>Профиль</span>
+                                    </a>
+                                    <a href="cabinet-6.html" class="nav-link">
+                                        <span>Документы</span>
+                                        <svg class="ml-2" width="23" height="24">
+                                            <use xlink:href="#warning"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="cabinet-7.html" class="nav-link">
+                                        <span>Фотографии</span>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-9">
+                            {{> body}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{> footer}}
+        </div>
+    </main>
+    {{> popups}}
+    {{> svg}}
+    <script src="{{root}}assets/js/app.js"></script>
+
+</body>
+</html>
