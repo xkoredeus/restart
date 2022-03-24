@@ -27,7 +27,7 @@
 @mixin font-a-exbold {font-family: 'AkzidenzGroteskPro-XBd', Lato, Roboto, sans-serif;}
 @mixin font-a-regular {font-family: 'AkzidenzGroteskPro-Ext', Lato, Roboto, sans-serif;}
 @mixin font-a-medium {font-family: 'AkzidenzGroteskPro-MdEx', Lato, Roboto, sans-serif;}
-
+@mixin font-a-regular-imp {font-family: 'AkzidenzGroteskPro-Ext', Lato, Roboto, sans-serif !important;}
 .font-l-thin {@include font-l-thin}
 .font-l-light {@include font-l-light}
 .font-l-regular {@include font-l-regular}
@@ -39,6 +39,7 @@
 .font-a-bold {@include font-a-bold}
 .font-a-exbold {@include font-a-exbold}
 .font-a-regular {@include font-a-regular}
+.font-a-regular-important {@include font-a-regular-imp}
 .font-a-medium {@include font-a-medium}
 
 $font-14: 0.7778rem;

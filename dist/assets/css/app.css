@@ -5483,6 +5483,10 @@ main {
   font-family: 'AkzidenzGroteskPro-Ext', Lato, Roboto, sans-serif;
 }
 
+.font-a-regular-important {
+  font-family: 'AkzidenzGroteskPro-Ext', Lato, Roboto, sans-serif !important;
+}
+
 .font-a-medium {
   font-family: 'AkzidenzGroteskPro-MdEx', Lato, Roboto, sans-serif;
 }
@@ -5715,7 +5719,6 @@ select {
 input[type="date"] {
   color: #A7A7A7;
   padding: 20px 19px;
-  text-align: center;
 }
 
 @media only screen and (max-width: 1576px) {
@@ -5822,7 +5825,7 @@ input[type="number"] {
 }
 
 .select2-container--default {
-  font-size: 0.8889rem;
+  font-size: 1rem;
   font-family: 'Lato', Roboto, sans-serif;
   font-weight: 400;
 }
@@ -5877,14 +5880,18 @@ input[type="number"] {
   background-color: #fff;
 }
 
+.select2-container--default .select2-results > .select2-results__options {
+  margin-right: 4px;
+  margin-bottom: 5px;
+}
+
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar {
-  width: 10px;
+  width: 3px;
 }
 
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-track {
-  background-color: #fff;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #dedede;
+  border-radius: 50px;
 }
 
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
@@ -6098,6 +6105,54 @@ input[type="date"] {
 .file--uploaded .file__picture {
   opacity: 1;
   visibility: visible;
+}
+
+.date-1 {
+  max-width: 140px;
+}
+
+@media only screen and (max-width: 1576px) {
+  .date-1 {
+    max-width: 130px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .date-1 {
+    max-width: unset;
+  }
+}
+
+.passport-number {
+  max-width: 120px;
+}
+
+@media only screen and (max-width: 1576px) {
+  .passport-number {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .passport-number {
+    max-width: unset;
+  }
+}
+
+.division {
+  max-width: 120px;
+}
+
+@media only screen and (max-width: 1576px) {
+  .division {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .division {
+    max-width: unset;
+  }
 }
 
 button {
@@ -6412,6 +6467,10 @@ button {
   .section--small {
     padding: 50px 0;
   }
+}
+
+.section--extrasmall {
+  padding: 50px 0;
 }
 
 .section__title {
@@ -7087,6 +7146,28 @@ a:hover {
   }
 }
 
+.offer-picture__wrapper::after {
+  position: absolute;
+  content: '';
+  width: 1400px;
+  height: 630px;
+  right: 150px;
+  top: -420px;
+  background: #fff;
+  opacity: 0.9;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  border-radius: 50%;
+  -webkit-transform: rotate(131deg);
+          transform: rotate(131deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .offer-picture__wrapper::after {
+    display: none;
+  }
+}
+
 .products {
   position: relative;
   z-index: 1;
@@ -7209,7 +7290,7 @@ a:hover {
 }
 
 .product-card {
-  border-radius: 3px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 4px 4px rgba(73, 71, 194, 0.2);
           box-shadow: 0 4px 4px rgba(73, 71, 194, 0.2);
   -webkit-transition: .6s all ease-in-out;
@@ -7444,13 +7525,13 @@ a:hover {
 
 .login-picture {
   position: absolute;
-  left: -80%;
+  left: -95%;
   top: -50%;
 }
 
 @media only screen and (max-width: 1576px) {
   .login-picture {
-    left: -95%;
+    left: -100%;
   }
 }
 
@@ -7550,12 +7631,16 @@ a:hover {
 
 .card__input-number {
   max-width: 228px;
-  text-align: center;
 }
 
 .card__input-period {
-  max-width: 90px;
-  text-align: center;
+  max-width: 100px;
+}
+
+@media only screen and (max-width: 1576px) {
+  .card__input-period {
+    max-width: 90px;
+  }
 }
 
 .card__top, .card__info {
@@ -7730,6 +7815,12 @@ label.card:hover {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .cabinet-inner {
+    padding-left: 40px;
+  }
+}
+
 .nav {
   padding: 26px 40px;
   background-color: #fff;
@@ -7846,18 +7937,19 @@ label.card:hover {
 }
 
 .payments-history-list::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 3px;
 }
 
 .payments-history-list::-webkit-scrollbar-track {
-  background-color: #C4C4C4;
+  background-color: #dedede;
+  border-radius: 5px;
 }
 
 .payments-history-list::-webkit-scrollbar-thumb {
   width: 10px;
   height: 10px;
   background: #07078D;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 976px) {

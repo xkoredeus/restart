@@ -56,6 +56,24 @@
         right: -30%;
       }
     }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1400px;
+      height: 630px;
+      right: 150px;
+      top: -420px;
+      background: $white;
+      opacity: 0.9;
+      filter: blur(60px);
+      border-radius: 50%;
+      transform: rotate(131deg);
+
+      @include r(1200) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -156,7 +174,7 @@
   }
 
   &-card {
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 4px 4px rgba(73, 71, 194, 0.2);
     @include ease-in-out;
     overflow: hidden;
