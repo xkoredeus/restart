@@ -163,6 +163,15 @@ a {
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
+.fancybox-bg {
+  background-color: #000;
+}
+.fancybox-is-open .fancybox-bg {
+  opacity: .5;
+}
+.fancybox-content {
+  border-radius: 3px;
+}
 
 .document {
   display: grid;

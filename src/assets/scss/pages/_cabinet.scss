@@ -97,11 +97,20 @@
     justify-content: flex-start;
   }
 }
+.popup-history {
+  @include rmin(1200) {
+    padding: 44px 18px 44px 44px;
+  }
+}
 
 .payments-history-list {
   max-height: 470px;
   overflow-y: scroll;
-  padding-right: 15px;
+  padding-right: 55px;
+
+  @include r(1200) {
+    padding-right: 20px;
+  }
 
   &::-webkit-scrollbar {
     width: 3px;

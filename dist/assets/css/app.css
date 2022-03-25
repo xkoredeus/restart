@@ -6697,6 +6697,18 @@ a:hover {
   transform: translateX(0);
 }
 
+.fancybox-bg {
+  background-color: #000;
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: .5;
+}
+
+.fancybox-content {
+  border-radius: 3px;
+}
+
 .document {
   display: grid;
   grid-template-columns: 70px 1fr;
@@ -7978,10 +7990,22 @@ label.card:hover {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .popup-history {
+    padding: 44px 18px 44px 44px;
+  }
+}
+
 .payments-history-list {
   max-height: 470px;
   overflow-y: scroll;
-  padding-right: 15px;
+  padding-right: 55px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .payments-history-list {
+    padding-right: 20px;
+  }
 }
 
 .payments-history-list::-webkit-scrollbar {
