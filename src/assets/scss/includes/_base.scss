@@ -122,7 +122,7 @@ a {
     background-color: $white;
 
     &::before {
-      left: 6%;
+      left: -6%;
       top: -8%;
 
       @include r(1200) {

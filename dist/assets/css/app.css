@@ -6658,7 +6658,7 @@ a:hover {
 }
 
 .layout--home::before {
-  left: 6%;
+  left: -6%;
   top: -8%;
 }
 
