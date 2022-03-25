@@ -15,6 +15,20 @@ $(() => {
 });
 
 $(() => {
+  $('.js-tg-mask').on('input', function() {
+    if (!($(this).val().includes('@'))) {
+      $( this ).val(function( i, val ) {
+        return `@${val}`;
+      });
+    } else if ($(this).val().includes('@') && $(this).val().length === 1) {
+      $( this ).val(function() {
+        return '';
+      });
+    }
+  });
+})
+
+$(() => {
   if ($(window).width() < 1200) {
     $('.nav-wrapper').hide();
     $('.js-toggle-nav').fadeIn();
@@ -207,3 +221,31 @@ $(() => {
     goBack();
   })
 });
+
+$(() => {
+  // products
+  const productsAnimation = gsap.timeline({
+    defaults: {
+      ease: "power3.inOut"
+    },
+    scrollTrigger: {
+      trigger: '.cabinets',
+      start: "top center",
+    }
+  });
+
+  productsAnimation.to('.products-clouds', {
+    yPercent: 50,
+    // delay: 0
+    duration: 2.5,
+  }, "-=1");
+
+  productsAnimation.fromTo('.cabinets-pictures', {
+    autoAlpha: 0,
+    yPercent: 100,
+  }, {
+    autoAlpha: 1,
+    yPercent: 0,
+    duration: 2.6,
+  }, "-=2.4");
+})

@@ -176,6 +176,11 @@ label.card {
       transform: translateY(-60px);
       z-index: 1;
     }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
   }
 
   @include r(1200) {
@@ -203,5 +208,24 @@ label.card {
   &__wrapper {
     position: relative;
     height: 100%;
+
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1630px;
+      height: 690px;
+      right: 280px;
+      top: -420px;
+      background: $white;
+      opacity: 0.9;
+      filter: blur(60px);
+      border-radius: 50%;
+      transform: rotate(131deg);
+
+      @include r(1200) {
+        display: none;
+      }
+    }
   }
 }

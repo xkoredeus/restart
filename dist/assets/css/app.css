@@ -5415,6 +5415,15 @@ main {
 }
 
 @font-face {
+  font-family: 'AkzidenzGroteskPro-LightEx';
+  src: url("../fonts/AkzidenzGroteskPro-LightEx.eot");
+  src: url("../fonts/AkzidenzGroteskPro-LightEx.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskPro-LightEx.woff2") format("woff2"), url("../fonts/AkzidenzGroteskPro-LightEx.woff") format("woff"), url("../fonts/AkzidenzGroteskPro-LightEx.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'AkzidenzGroteskPro-XBd';
   src: url("../fonts/AkzidenzGroteskPro-XBd.eot");
   src: url("../fonts/AkzidenzGroteskPro-XBd.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskPro-XBd.woff2") format("woff2"), url("../fonts/AkzidenzGroteskPro-XBd.woff") format("woff"), url("../fonts/AkzidenzGroteskPro-XBd.ttf") format("truetype");
@@ -5489,6 +5498,10 @@ main {
 
 .font-a-medium {
   font-family: 'AkzidenzGroteskPro-MdEx', Lato, Roboto, sans-serif;
+}
+
+.font-a-light {
+  font-family: 'AkzidenzGroteskPro-LightEx', Lato, Roboto, sans-serif;
 }
 
 .font-14 {
@@ -6581,7 +6594,7 @@ a:hover {
   content: '';
   width: 550px;
   height: 550px;
-  left: 4%;
+  left: -6%;
   top: -300px;
   background: #1816a399;
   opacity: 0.3;
@@ -6590,6 +6603,12 @@ a:hover {
   border-radius: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1576px) {
+  .layout::before {
+    left: 4%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -7095,7 +7114,7 @@ a:hover {
 
 .offer-picture {
   position: absolute;
-  left: -70%;
+  left: -50%;
   top: -100%;
   z-index: 1;
 }
@@ -7149,8 +7168,8 @@ a:hover {
 .offer-picture__wrapper::after {
   position: absolute;
   content: '';
-  width: 1400px;
-  height: 630px;
+  width: 1630px;
+  height: 850px;
   right: 150px;
   top: -420px;
   background: #fff;
@@ -7196,7 +7215,12 @@ a:hover {
   }
 }
 
-.products-overlay::before {
+.products-wrapper {
+  position: relative;
+  background-color: #fafafc;
+}
+
+.products-wrapper::before {
   position: absolute;
   content: '';
   width: 5000px;
@@ -7210,18 +7234,11 @@ a:hover {
   z-index: 1;
 }
 
-.products-overlay::after {
+.products-overlay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   position: absolute;
-  content: '';
-  width: 5000%;
-  height: 240px;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, #f9fafc), to(#f9fafc));
-  background: linear-gradient(180deg, transparent, #f9fafc 60%, #f9fafc 100%);
-  z-index: 2;
 }
 
 .products-clouds {
@@ -7229,7 +7246,7 @@ a:hover {
   -o-object-fit: contain;
      object-fit: contain;
   left: 50%;
-  top: 180px;
+  top: -390px;
   width: calc(100% + 200px);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -7348,7 +7365,6 @@ a:hover {
 
 .cabinets {
   position: relative;
-  background-color: #f9fafc;
   margin-top: -50px;
   z-index: 1;
   padding-bottom: 130px;
@@ -7404,7 +7420,13 @@ a:hover {
   left: 0;
   width: 100%;
   height: auto;
-  bottom: 0;
+  bottom: -10px;
+}
+
+.home-documentation {
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .site {
@@ -7763,6 +7785,10 @@ label.card:hover {
             transform: translateY(-60px);
     z-index: 1;
   }
+  .success span {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -7796,6 +7822,28 @@ label.card:hover {
 .success-picture__wrapper {
   position: relative;
   height: 100%;
+}
+
+.success-picture__wrapper::after {
+  position: absolute;
+  content: '';
+  width: 1630px;
+  height: 690px;
+  right: 280px;
+  top: -420px;
+  background: #fff;
+  opacity: 0.9;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  border-radius: 50%;
+  -webkit-transform: rotate(131deg);
+          transform: rotate(131deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .success-picture__wrapper::after {
+    display: none;
+  }
 }
 
 .cabinet-content {

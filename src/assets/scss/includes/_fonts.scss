@@ -13,6 +13,18 @@
 }
 
 @font-face {
+  font-family: 'AkzidenzGroteskPro-LightEx';
+  src: url('../fonts/AkzidenzGroteskPro-LightEx.eot');
+  src: url('../fonts/AkzidenzGroteskPro-LightEx.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AkzidenzGroteskPro-LightEx.woff2') format('woff2'),
+  url('../fonts/AkzidenzGroteskPro-LightEx.woff') format('woff'),
+  url('../fonts/AkzidenzGroteskPro-LightEx.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'AkzidenzGroteskPro-XBd';
   src: url('../fonts/AkzidenzGroteskPro-XBd.eot');
   src: url('../fonts/AkzidenzGroteskPro-XBd.eot?#iefix') format('embedded-opentype'),

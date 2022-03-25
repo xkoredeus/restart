@@ -90,6 +90,9 @@ gulp.task('scripts', function () {
         'src/assets/js/vendor/jquery/jquery.min.js',
         'src/assets/js/vendor/jquery/masked-input.js',
         'src/assets/js/vendor/fancybox/jquery.fancybox.min.js',
+        'src/assets/js/vendor/gsap/gsap.min.js',
+        'src/assets/js/vendor/gsap/ScrollTrigger.min.js',
+        // 'src/assets/js/vendor/gsap/ScrollToPlugin.min.js',
         // 'src/assets/js/vendor/swiper/swiper.min.js',
         'src/assets/js/vendor/select2/select2.min.js',
         'src/assets/js/app.js'
