@@ -277,11 +277,13 @@ $(() => {
     scrollTrigger: {
       trigger: '.cabinets',
       start: "top center",
+      end: "+=370",
+      scrub: 4.5
     }
   });
 
   productsAnimation.to('.products-clouds', {
-    yPercent: 50,
+    yPercent: 40,
     // delay: 0
     duration: 2.5,
   }, "-=1");
